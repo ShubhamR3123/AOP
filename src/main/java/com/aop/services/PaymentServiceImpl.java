@@ -5,12 +5,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class PaymentServiceImpl implements PaymentService {
 
-	public void makePayment() {
+	public void makePayment(int amount) {
 
-		System.out.println("Amount Debited....");
+		System.out.println(amount+":Amount Debited....");
 
 		
-		System.out.println("Amount credited....");
+		System.out.println(amount+":Amount credited....");
 
 	}
 

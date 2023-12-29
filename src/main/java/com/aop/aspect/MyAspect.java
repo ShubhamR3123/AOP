@@ -11,12 +11,12 @@ public class MyAspect {
 	
 	//for particuklar then write a method name otherwise 
 	//if we want before all metrhods then uses * instead of method name
-	@Before("execution(* com.aop.services.PaymentServiceImpl.makePayment())")
+	@Before("execution(* com.aop.services.PaymentServiceImpl.makePayment(..))")
 	public void printBefore() {
 		
 		System.out.println("Payment Started.....");
 	}
-	@After("execution(* com.aop.services.PaymentServiceImpl.makePayment())")
+	@After("execution(* com.aop.services.PaymentServiceImpl.makePayment(..))")
 	public void printAfter() {
 		
 		System.out.println("Payment Done.....");
